@@ -9,6 +9,8 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    id 'java'
+    id "com.google.protobuf" version "0.9.3"
 }
 
 repositories {
@@ -22,6 +24,7 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:31.1-jre'
+    implementation 'com.google.protobuf:protobuf-java:3.10.0'
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
