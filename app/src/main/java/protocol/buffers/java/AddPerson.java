@@ -25,7 +25,8 @@ public class AddPerson {
                 break;
             }
 
-            var phoneNumber = Person.PhoneNumber.newBuilder();
+            var phoneNumber = Person.PhoneNumber.newBuilder()
+                    .setNumber(number);
             stdout.print("Is this a mobile, home, or work phone? ");
             String type = stdin.readLine();;
             if (type.equals("mobile")) {
